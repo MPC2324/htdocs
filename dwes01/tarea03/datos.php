@@ -12,7 +12,12 @@ $array[6] = array("nombre"=>"MSI PRO MP243X","PVD"=>66.15,"PVP"=>89,"codigo"=>"M
 $array[7] = array("nombre"=>"TUF Gaming VG28UQL1A","PVD"=>601.25,"PVP"=>667.50,"codigo"=>"ASK1170","familia"=>"monitores"); 
 $array[8] = array("nombre"=>"PRO H610M-E","PVD"=>65.85,"PVP"=>74.92,"codigo"=>"MSI3503","familia"=>"placasBase");
 $array[9] = array("nombre"=>"MPG AI1300P","PVD"=>328.99,"PVP"=>358.99,"codigo"=>"MSI3621","familia"=>"fuentesAlimentacion");
+if ($_POST['pvp']>=0){
 $PVP = $_POST['pvp'];
+} else {
+    echo '<h2 class="alert alert-danger">No has ingresado un número, se pone por defecto 0</h2>';	
+    $PVP = 0;
+}
 
 
 // if (isset($_POST['enviar'])) {
