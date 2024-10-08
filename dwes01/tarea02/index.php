@@ -1,11 +1,6 @@
 <?php
 include 'b.php';
-for($numero=1;$numero<=2;$numero++){
-recorrerArray($numero);
-}
-var_dump($cabecera);    
-var_dump($datos);
-
+recorrerArray($archivo,$cabecera,$datos);
 ?>
 
 <!DOCTYPE html>
