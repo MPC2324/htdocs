@@ -1,8 +1,5 @@
 <?php
 
-$cabecera=[];
-$datos=[];
-
 function leerCSV($archivo,&$cabecera,&$datos){
 
     if ($archivo!==false) {

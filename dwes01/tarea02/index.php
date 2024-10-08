@@ -1,5 +1,6 @@
 <?php
 include 'b.php';
+
 recorrerArray($archivo,$cabecera,$datos);
 ?>
 
