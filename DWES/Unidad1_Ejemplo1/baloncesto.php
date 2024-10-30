@@ -1,15 +1,15 @@
 <?php
 /**
- * cargar datos de un archivo CSV
+ * cargar datos de liga de baloncesto en un archivo CSV
  * y retornarlo.
  */
-function leerCSV(string $archivo, array &$cabecera, array &$datos):array|false
+function obtenerDatos(string $nombreArchivo):array|false
 {
-    $r = fopen($archivo, 'r');
+    $r = fopen($nombreArchivo, 'r');
     if ($r !== false) {
         //Cargar datos
         $datos = [];
-        $cabecera = [];
+        $cabecera = null;
         while ($fila = fgetcsv($r)) {
             if (!$cabecera) {
                 $cabecera = $fila;
@@ -24,7 +24,8 @@ function leerCSV(string $archivo, array &$cabecera, array &$datos):array|false
         //die('No se pudo cargar el archivo');
         return false;
     }
-    return $cabecera;
-    return $datos;
-
+    return [$cabecera, $datos];
 }
+
+
+
