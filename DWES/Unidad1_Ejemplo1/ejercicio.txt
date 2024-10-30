@@ -1,0 +1,7 @@
+Un amigo nuestro nos ha pedido que hagamos una pequeña aplicación para gestionar los resultados de los últimos partidos de la liga de baloncesto:
+
+Fecha, Equipo 1, Equipo 2, Puntuación equipo 1, Puntuación equipo 2, Faltas equipo 1, Faltas equipo 2
+
+Quiere que los datos se puedan filtrar por equipo local o visitante (equipo 1 y 2) y además, ordenar por puntuación equipo 1, puntuación equipo 2 y por fecha.
+
+Importante: La fecha se almacenará en formato "2024/01/01" y los datos están almacenados en formato csv.
